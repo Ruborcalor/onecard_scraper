@@ -101,7 +101,7 @@ df = pd.read_csv("output.csv", names=["Transaction Number", "Date and Time", "Am
 df = df.reindex(index=df.index[::-1])
 df["Amount"] = df["Amount"].replace('\$', '', regex=True).astype(float)
 df["Date and Time"] = pd.to_datetime(df["Date and Time"])
-df["Cummulative Spending"] = df['Amount'].cumsum()
+df["Cumulative Spending"] = df['Amount'].cumsum()
 
-df.plot(x='Date and Time',y=['Cummulative Spending'])
+df.plot(x='Date and Time',y=['Cumulative Spending'])
 plt.show()
