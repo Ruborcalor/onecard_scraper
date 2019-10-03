@@ -124,9 +124,10 @@ plt.xticks(y_pos, only_dates, rotation=90)
 plt.ylabel('Dollars Spent')
 plt.title('Dollars Spent Per Day')
 plt.axhline(y=mean_average, color='r', linestyle='-')
+plt.savefig('daily_spending.png', bbox_inches='tight')
 plt.show()
 
 
 df.plot(y=['Cumulative Spending'])
-plt.show()
 plt.savefig('cummulative_spending.png', bbox_inches='tight')
+plt.show()
