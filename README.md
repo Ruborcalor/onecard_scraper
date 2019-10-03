@@ -6,4 +6,4 @@
 
 ## See screenshots below
 
-![Example 1](https://github.com/Ruborcalor/onecard_scraper/itworks.png "Example #1")
+![Example 1](https://github.com/Ruborcalor/onecard_scraper/raw/master/itworks.png "Example #1")
