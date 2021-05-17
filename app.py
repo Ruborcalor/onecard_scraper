@@ -32,7 +32,7 @@ def get_user_transactions():
     timeseries_data = scraper.get_timeseries_data_from_df(df)
     df = df.reset_index()
     return jsonify({
-        "user_transactions": df.to_dict('records'),
+        "user_transactions": list(reversed(df.to_dict('records'))),
         "user_transactions_summary": user_transactions_summary,
         "timeseries_data": timeseries_data,
         "account_balances": account_balances
